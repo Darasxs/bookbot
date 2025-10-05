@@ -14,7 +14,8 @@ def main():
     print(f"Found {words_number} total words")
     characters = get_number_of_characters(book)
     print("--------- Character Count -------\n")
-    sorted_characters = characters.sort(reverse = True, key=value)
+    sorted_characters = sort_characters(characters)
     print(sorted_characters)
+    # print(sorted_characters)
 
 main()

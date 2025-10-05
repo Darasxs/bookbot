@@ -14,3 +14,13 @@ def get_number_of_characters(book_content):
         else:
             characters[lowercase] += 1
     return characters
+
+def sort_on(characters_list):
+    return characters_list["num"]
+
+def sort_characters(characters):
+    characters_list = []
+    for key, value in characters.items():
+        characters_list.append({"char": key, "num": value})
+    characters_list.sort(reverse=True, key=sort_on)
+    return characters_list
