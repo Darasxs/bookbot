@@ -15,7 +15,8 @@ def main():
     characters = get_number_of_characters(book)
     print("--------- Character Count -------\n")
     sorted_characters = sort_characters(characters)
-    print(sorted_characters)
-    # print(sorted_characters)
+    for character in sorted_characters:
+        if character["char"].isalpha():
+            print(f"{character['char']}: {character['num']}")
 
 main()
