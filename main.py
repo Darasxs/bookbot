@@ -8,7 +8,7 @@ def get_book_text(filepath):
 
 def main():
     if(len(sys.argv) != 2):
-        print("Usage: python3 main.py <path_to_book>\n")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     print("============ *BOOKBOT* ============\n")
     book = get_book_text(sys.argv[1])
